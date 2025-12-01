@@ -6,7 +6,7 @@ import os
 import google.generativeai as genai
 
 # 🔑 Set your full Gemini API Key here (from https://makersuite.google.com/app/apikey)
-GENAI_API_KEY = "AIzaSyAgR3Xp-NcLjuOxffI-f1i15E_s39XNuAQ"  # 🔁 Replace this with your actual full key
+GENAI_API_KEY = " "  # 🔁 Replace this with your actual full key
 genai.configure(api_key=GENAI_API_KEY)
 
 # Create Gemini model
@@ -131,4 +131,5 @@ if __name__ == "__main__":
     while True:
         command = listen()
         if command:
+
             handle_command(command)
